@@ -1,21 +1,14 @@
 $('document').ready(function(){
 
-
-
-
-
-
-
-
-
-
-var names = [Richard, Jon, Tracy, Sahasha, BrianA, BrianV, Megan, Justin,
-Hillary, Liz, Donovan, Connor, Cormac, Ryan, Kyle, Andrew, Trent,
-Anthony, Katie, RyanM, Joel];
+var names = ['Richard', 'Jon', 'Tracy', 'Sahasha', 'BrianA', 'BrianV',
+ 'Megan', 'Justin', 'Hillary', 'Liz', 'Donovan', 'Connor', 'Cormac',
+ 'Ryan', 'Kyle', 'Andrew', 'Trent', 'Anthony', 'Katie', 'RyanM', 'Joel'];
 
 var groups = ['Star Wars Geeks', 'Harry Potter People', 'Team GoT',
 'Big Bang Theorists', 'Baseball Fans', 'Comedy Lovers', 'Brown Coats',
 'Team Artsy', 'Ren Festie'];
+
+var numGroups = 0;
 
 
 function shuffle(array) {
@@ -36,13 +29,17 @@ function shuffle(array) {
 
   return array;
 }
-// Used like so
-// var arr = [2, 11, 37, 42];
-// shuffle(arr);
-// console.log(arr);
 
-shuffle(names);
-console.log(names);
+// shuffle(names);
+// console.log(names);
+
+$('body')on.('click', '#number' function() {
+  numGroups = parseInt($(this).val());
+
+
+$('body')on.('click', '.generator' function() {
+  shuffle(names);
+}
 
 
 
