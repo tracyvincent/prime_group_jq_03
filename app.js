@@ -1,8 +1,8 @@
 $('document').ready(function(){
 
-var names = [Richard, Jon, Tracy, Sahasha, BrianA, BrianV, Megan, Justin,
-Hillary, Liz, Donovan, Connor, Cormac, Ryan, Kyle, Andrew, Trent,
-Anthony, Katie, RyanM, Joel];
+var names = ['Richard', 'Jon', 'Tracy', 'Sahasha', 'BrianA', 'BrianV',
+ 'Megan', 'Justin', 'Hillary', 'Liz', 'Donovan', 'Connor', 'Cormac',
+ 'Ryan', 'Kyle', 'Andrew', 'Trent', 'Anthony', 'Katie', 'RyanM', 'Joel'];
 
 var groups = ['Star Wars Geeks', 'Harry Potter People', 'Team GoT',
 'Big Bang Theorists', 'Baseball Fans', 'Comedy Lovers', 'Brown Coats',
