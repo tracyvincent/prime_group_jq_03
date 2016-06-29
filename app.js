@@ -8,6 +8,8 @@ var groups = ['Star Wars Geeks', 'Harry Potter People', 'Team GoT',
 'Big Bang Theorists', 'Baseball Fans', 'Comedy Lovers', 'Brown Coats',
 'Team Artsy', 'Ren Festie'];
 
+var numGroups = 0;
+
 
 function shuffle(array) {
   var currentIndex = array.length, temporaryValue, randomIndex;
@@ -27,13 +29,17 @@ function shuffle(array) {
 
   return array;
 }
-// Used like so
-// var arr = [2, 11, 37, 42];
-// shuffle(arr);
-// console.log(arr);
 
-shuffle(names);
-console.log(names);
+// shuffle(names);
+// console.log(names);
+
+$('body')on.('click', '#number' function() {
+  numGroups = parseInt($(this).val());
+
+
+$('body')on.('click', '.generator' function() {
+  shuffle(names);
+}
 
 
 
