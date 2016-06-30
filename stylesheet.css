@@ -13,6 +13,12 @@ button {
   border-radius: 10px;
 }
 
+li{
+  padding-left: 8px;
+}
+ul{
+  list-style-type: none;
+}
 
 
 #generator{
