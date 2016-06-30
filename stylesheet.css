@@ -7,7 +7,7 @@ button {
   background-color: #804615;
   border: none;
   color:#FFD1AA;
-  width:180px;
+  width:100px;
   height:40px;
   margin: 10px;
   border-radius: 10px;
@@ -23,10 +23,11 @@ ul{
 
 #generator{
 background-color: #552700;
+width:240px;
 }
 
 #groups{
 
   padding:20px;
-  background-color: rgb(128, 24, 21, 0.2);
+  background: rgb(128, 24, 21, 0.2);
 }
