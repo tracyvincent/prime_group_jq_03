@@ -10,6 +10,18 @@ var groups = ['Star Wars Geeks', 'Harry Potter People', 'Team GoT',
 
 var numGroups = 0;
 
+// for() {
+// var starWarsGeeks = [];
+// var harryPotterPeople = [];
+// var teamGot = [];
+// var renFesties = [];
+// var bigBang = [];
+// var baseballFans = [];
+// var comedyLovers = [];
+// var brownCoats = [];
+// var teamArtsy = [];
+// };
+
 
 function shuffle(array) {
   var currentIndex = array.length, temporaryValue, randomIndex;
