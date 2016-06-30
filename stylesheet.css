@@ -10,9 +10,17 @@ button {
   width:180px;
   height:40px;
   margin: 10px;
+  border-radius: 10px;
 }
+
+
 
 #generator{
 background-color: #552700;
+}
 
+#groups{
+
+  padding:20px;
+  background-color: rgb(128, 24, 21, 0.2);
 }
