@@ -1,0 +1,18 @@
+body{
+  background-color: #AA6D39;
+  color:#FFD1AA;
+}
+
+button {
+  background-color: #804615;
+  border: none;
+  color:#FFD1AA;
+  width:180px;
+  height:40px;
+  margin: 10px;
+}
+
+#generator{
+background-color: #552700;
+
+}
