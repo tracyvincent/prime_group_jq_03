@@ -39,6 +39,7 @@ var allGroups = [starWarsGeeks, brownCoats, teamGoT, renFesties, bigBangers,
    for (var i = 0; i < numGroups; i++) {
      $('.groups').append('<div><h3>' + groups[i] + '</h3><br/>' +
        formatGroup(finalGroups[i]) + '</ul></div>');
+
    }
  }
 
@@ -98,6 +99,8 @@ var allGroups = [starWarsGeeks, brownCoats, teamGoT, renFesties, bigBangers,
 
  $('body').on('click', '.number', function() {
    numGroups = parseInt($(this).html());
+   $('.groups').fadeOut();
+
  });
  console.log(numGroups);
 
@@ -106,6 +109,10 @@ var allGroups = [starWarsGeeks, brownCoats, teamGoT, renFesties, bigBangers,
    shuffle(names);
    addTeammates();
    pushToPage(numGroups, allGroups, groups);
+
+   $('.groups').fadeIn();
+
+
  //  addTheseGroups();
  });
  });
