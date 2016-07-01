@@ -1,12 +1,13 @@
-$('document').ready(function(){
-var numGroups = 2;
-var names = ['Richard', 'Jon', 'Tracy', 'Sahasha', 'BrianA', 'BrianV', 'Megan', 'Justin',
-'Hillary', 'Liz', 'Donovan', 'Connor', 'Cormac', 'Ryan', 'Kyle', 'Andrew', 'Trent',
-'Anthony', 'Katie', 'RyanM', 'Joel'];
 
-var groups = ['Star Wars Geeks', 'Harry Potter People', 'Team GoT',
-'Big Bang Theorists', 'Baseball Fans', 'Comedy Lovers', 'Brown Coats',
-'Team Artsy', 'Ren Festie'];
+$('document').ready(function() {
+
+var names = ['Richard', 'Jon', 'Tracy', 'Sahasha', 'BrianA', 'BrianV',
+ 'Megan', 'Justin', 'Hillary', 'Liz', 'Donovan', 'Connor', 'Cormac',
+ 'Ryan', 'Kyle', 'Andrew', 'Trent', 'Anthony', 'Katie', 'RyanM', 'Joel'];
+
+var groups = ['Star Wars Geeks', 'Browncoats', 'Team GoT',
+'Ren Festies', 'Big Bangers', 'Baseball Fans', 'Comedy Lovers',
+'Harry Potter People', 'Team Artsy'];
 
 var numGroups = 5;
 
@@ -22,7 +23,6 @@ var teamArtsy = [];
 
 var allGroups = [starWarsGeeks, brownCoats, teamGoT, renFesties, bigBangers,
  baseballFans, comedyLovers, harryPotterPeople, teamArtsy];
-
 
 function formatGroup (randomizedGroup) {
   var groupList = '';
@@ -47,10 +47,6 @@ function initializeGroups(allGroups){
 }
 
 
-// don't need to pass params to addTheseGroups, use the globals inside the function
-// right now, successfully assigning number and shuffling array, and calling this function
-// with the correct numGroups
-// now just use the names array, numGroups, and allGroups to push to new array
 // function addTheseGroups() {
 //   for (var i = 0; i < numGroups; i++) {
 //     theseGroups.push(allGroups[i]);
@@ -66,11 +62,8 @@ function addTeammates() {
       };
     allGroups[counter].push(names[i]);
     counter++;
-      // var x = i % numGroups;
-      // allGroups[x].push(names[i]);
     };
   };
-
 
   // addTheseGroups();
   // addTeammates();
@@ -78,6 +71,7 @@ function addTeammates() {
   // console.log(starWarsGeeks);
   // console.log(brownCoats);
   // console.log(shuffle(names));
+
 
 function shuffle(array) {
   var currentIndex = array.length, temporaryValue, randomIndex;
@@ -97,7 +91,6 @@ function shuffle(array) {
 
   return array;
 }
-
 // shuffle(names);
 // console.log(names);
 
@@ -113,33 +106,4 @@ $('body').on('click', '#generator', function() {
   pushToPage(numGroups, allGroups, groups);
 //  addTheseGroups();
 });
-// function genGroups() {
-//   var p = 0;
-//   while (p < (names.length - 1)) {
-//     for (var i = 0; i < numGroups; i++) {
-//       if (typeof finalGroups[i] === 'undefined') {
-//         finalGroups[i] = [];
-//       }
-//       finalGroups[i].push(names[p]);
-//       p++;
-//     }
-//   }
-// }
-// // Used like so
-// // var arr = [2, 11, 37, 42];
-// // shuffle(arr);
-// // console.log(arr);
-//
-//   //shuffle(names);
-//
-//   $('button.number').click(function() {
-//     numGroups = parseInt($(this).html());
-//   });
-//
-//   $('button#generator').click(function() {
-//     shuffle(names);
-//     genGroups();
-//     pushToPage(numGroups, finalGroups, groups);
-//   })
-//   // pushToPage(2, finalGroups, groups);
 });
