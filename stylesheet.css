@@ -7,12 +7,34 @@ button {
   background-color: #804615;
   border: none;
   color:#FFD1AA;
-  width:180px;
+  width:100px;
   height:40px;
   margin: 10px;
+  border-radius: 10px;
+   box-shadow: 10px 10px 5px #7C3A00;
 }
+
+li{
+  padding-left: 8px;
+
+}
+ul{
+  list-style-type: none;
+
+}
+
 
 #generator{
 background-color: #552700;
+width:240px;
+}
+
+#groups{
+
+  padding:20px;
+  background: rgb(128, 24, 21, 0.2);
+  display: inline-block;
+  box-shadow: 5px 5px 5px #7C3A00;
+  margin:8px;
 
 }
