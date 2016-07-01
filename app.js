@@ -4,9 +4,9 @@ var names = ['Richard', 'Jon', 'Tracy', 'Sahasha', 'BrianA', 'BrianV',
  'Megan', 'Justin', 'Hillary', 'Liz', 'Donovan', 'Connor', 'Cormac',
  'Ryan', 'Kyle', 'Andrew', 'Trent', 'Anthony', 'Katie', 'RyanM', 'Joel'];
 
-var groups = ['Star Wars Geeks', 'Harry Potter People', 'Team GoT',
-'Big Bang Theorists', 'Baseball Fans', 'Comedy Lovers', 'Brown Coats',
-'Team Artsy', 'Ren Festie'];
+var groups = ['Star Wars Geeks', 'Brown Coats', 'Team GoT',
+'Ren Festies', 'Big Bangers', 'Baseball Fans', 'Comedy Lovers',
+'Harry Potter People', 'Team Artsy'];
 
 var numGroups = 5;
 
@@ -46,10 +46,13 @@ function addTeammates() {
 
   addTheseGroups();
   addTeammates();
-  console.log(theseGroups);
+  //console.log(theseGroups);
   console.log(starWarsGeeks);
   console.log(brownCoats);
-  console.log(shuffle(names));
+  console.log(teamGoT);
+  console.log(renFesties);
+  console.log();
+  //console.log(shuffle(names));
 
 function shuffle(array) {
   var currentIndex = array.length, temporaryValue, randomIndex;
