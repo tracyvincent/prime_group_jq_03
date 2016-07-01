@@ -35,8 +35,8 @@ function formatGroup (randomizedGroup) {
 function pushToPage(numGroups, finalGroups, groups) {
   $('.groups').empty();
   for (var i = 0; i < numGroups; i++) {
-    $('.groups').append('<h3>' + groups[i] + '</h3><br/><ul>' +
-      formatGroup(finalGroups[i]) + '</ul>');
+    $('.groups').append('<div><h3>' + groups[i] + '</h3><br/>' +
+      formatGroup(finalGroups[i]) + '</ul></div>');
   }
 }
 

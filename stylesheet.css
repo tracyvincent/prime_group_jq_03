@@ -29,7 +29,7 @@ background-color: #552700;
 width:240px;
 }
 
-#groups{
+.groups div{
 
   padding:20px;
   background: rgb(128, 24, 21, 0.2);
